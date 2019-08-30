@@ -15,7 +15,7 @@ public class Laboration1 {
         int choice;
 
         do {
-            System.out.println("\n-----------------------");
+            System.out.println("\n------------------");
             System.out.println("Räkna ut arean för din:");
             System.out.println("1. Cirkel");
             System.out.println("2. Triangel");
@@ -52,20 +52,20 @@ public class Laboration1 {
         double length = scnr.nextDouble();
         Square square = new Square(height, length);
 
-        System.out.println("1. Visa Area");
+        System.out.println("\n1. Visa Area");
         System.out.println("2. Visa Omkrets");
         System.out.println("3. Visa Area och Omkrets");
         int choice = scnr.nextInt();
 
         switch (choice) {
             case 1:
-                System.out.println("Arean är: " + square.area() + " cm");
+                System.out.println("\nArean är: " + square.area() + " cm");
                 break;
             case 2:
-                System.out.println("Omkretsen är: " + square.circumference() + " cm");
+                System.out.println("\nOmkretsen är: " + square.circumference() + " cm");
                 break;
             case 3:
-                System.out.println("Arean är: " + square.area() + " cm");
+                System.out.println("\nArean är: " + square.area() + " cm");
                 System.out.println("Omkretsen är: " + square.circumference() + " cm");
                 break;
         }
@@ -80,20 +80,20 @@ public class Laboration1 {
             double sideC = scnr.nextDouble();
             Triangle triangle = new Triangle(sideA, sideB, sideC);
             if (triangle.correct()) {
-                System.out.println("1. Visa Area");
+                System.out.println("\n1. Visa Area");
                 System.out.println("2. Visa Omkrets");
                 System.out.println("3. Visa Area och Omkrets");
                 int choice = scnr.nextInt();
 
                 switch (choice) {
                     case 1:
-                        System.out.println("Arean är: " + triangle.area() + " cm");
+                        System.out.println("\nArean är: " + triangle.area() + " cm");
                         break;
                     case 2:
-                        System.out.println("Omkretsen är: " + triangle.circumference() + " cm");
+                        System.out.println("\nOmkretsen är: " + triangle.circumference() + " cm");
                         break;
                     case 3:
-                        System.out.println("Arean är: " + triangle.area() + " cm");
+                        System.out.println("\nArean är: " + triangle.area() + " cm");
                         System.out.println("Omkretsen är: " + triangle.circumference() + " cm");
                         break;
                 }
@@ -110,20 +110,20 @@ public class Laboration1 {
         double radie = scnr.nextDouble();
         Circle circle = new Circle(radie);
 
-        System.out.println("1. Visa Area");
+        System.out.println("\n1. Visa Area");
         System.out.println("2. Visa Omkrets");
         System.out.println("3. Visa Area och Omkrets");
         int choice = scnr.nextInt();
 
         switch (choice) {
             case 1:
-                System.out.println("Arean är: " + circle.area() + " cm");
+                System.out.println("\nArean är: " + circle.area() + " cm");
                 break;
             case 2:
-                System.out.println("Omkretsen är: " + circle.circumference() + " cm");
+                System.out.println("\nOmkretsen är: " + circle.circumference() + " cm");
                 break;
             case 3:
-                System.out.println("Arean är: " + circle.area() + " cm");
+                System.out.println("\nArean är: " + circle.area() + " cm");
                 System.out.println("Omkretsen är: " + circle.circumference() + " cm");
                 break;
         }
